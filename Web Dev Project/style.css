@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar { 
+	width: 5px; 
+  } 
+
+button {
+	font-size: 25px;
+    background-color: rgb(77, 81, 79);
+    color:rgb(236, 234, 237)
+}
+
+body {
+	background-color: rgb(113, 103, 122);
+}
+
+.buttons {
+	margin: 90px 0px 20px 0px;
+  	position:absolute;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
+
+.htext {
+	text-align: right;
+	font-size: 25px;
+ 	font-family: Karla;
+	color: white;
+	z-index: 9;
+}
+
+.hpic {
+	display: block;
+	border-top: solid 4px;
+	border-bottom: solid 4px;
+	position: absolute; 
+	width: 100%;
+	height: 120px;
+	background-image: url(images/header.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+	}
+
+.gallery {
+	margin: 270px 50px 150px 140px;
+	width:2700px;
+	height:800px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	scrollbar-width: 5px;
+	border: solid 7px;
+	border-color: pink;
+	background-color:rgb(158, 121, 144);
+	border-radius: 10px;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img {
+    height: 30%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+	padding: 8px;
+}
+
+img:hover {
+	border-color: 4px pink;
+  }
+
+button:hover {
+
+}
+@media(max-width: 768px) {
+    .photo-gallery{
+        flex-direction: column;
+    }
+}
+
+@font-face {
+  src: url(fonts/Karla-Regular.ttf);
+  font-family: "Karla";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  }
+
+ @font-face {
+  src: url(fonts/Inconsolata-Regular.ttf);
+  font-family: "Inc R";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  }
+
+ @font-face{ 
+ 	font-family:Calluna; 
+ 	src:url("https://static.tumblr.com/zgb0z1w/Pjnov1py3/calluna-regular-webfont.eot?3=&v=7c192d86344b943cd3e8d9123ed1dafa");src:url("https://static.tumblr.com/zgb0z1w/Pjnov1py3/calluna-regular-webfont.eot?3%3F=&v=7c192d86344b943cd3e8d9123ed1dafa#iefix") format("embedded-opentype"),url("https://static.tumblr.com/zgb0z1w/ALjov1pzw/calluna-regular-webfont.woff?3=&v=60172bcdc91d310108023e102eec8676") format("woff"),url("https://static.tumblr.com/zgb0z1w/HsIov1q0g/calluna-regular-webfont.ttf?3=&v=cc6292d625d03dc65b9665f0cd27e2cd") format("truetype"); 
+ 	font-weight:400; 
+ 	font-style:normal
+ }
+
+ #parent {
+	display: flex;
+	justify-content: space-around;
+  }
+
+.right img {
+	position: relative;
+	right: 10px;
+	margin-top: 120px;
+	margin-right: 100px;
+	height: 1100px;
+	width:425px;
+	float: right;
+}
+
+.right {
+	width: 600px;
+}
+
+button {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	overflow: hidden;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: color, background-color;
+	transition-property: color, background-color;
+  }
+button:hover, button:focus, button:active {
+	background-color: rgb(47, 43, 44);
+	color: white;
+  }
+  
